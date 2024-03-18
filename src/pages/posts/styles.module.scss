@@ -1,0 +1,200 @@
+.container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.parent {
+  row-gap: 48px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  width: 90%;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 122rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+.post {
+  display: block;
+  .image {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    .tags {
+      text-decoration: none;
+      color: #eb0028;
+      font-family: "Roboto";
+      font-size: 13px;
+      font-weight: 700;
+      width: 100%;
+      height: 13px;
+    }
+    .title {
+      color: #000000;
+      font-family: "Roboto";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      width: 100%;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      height: 12px;
+      line-height: 12px;
+      .oval {
+        width: 3px;
+        height: 3px;
+        background-color: #d7d7d7;
+        border-radius: 50px;
+        margin-right: 5px;
+      }
+
+      .autor {
+        font-family: "Roboto";
+        font-size: 12px;
+        font-weight: 500;
+        color: #000000;
+        margin-right: 5px;
+      }
+
+      .date {
+        color: #9b9b9b;
+        font-size: 12px;
+        font-weight: 400;
+        margin-right: 5px;
+      }
+
+      .views {
+        color: #9b9b9b;
+        font-size: 12px;
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+    .text {
+      width: 100%;
+      height: 80px;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: "Roboto";
+      color: #929292;
+      line-height: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .parent {
+    -ms-grid-columns: 1fr 40px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    display: -ms-grid;
+    display: grid;
+    max-width: 122rem;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .post {
+    display: block;
+    .image {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .parent {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 48px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    display: -ms-grid;
+    display: grid;
+    max-width: 122rem;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .post {
+    display: block;
+    .image {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
